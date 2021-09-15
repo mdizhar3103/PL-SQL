@@ -1,0 +1,14 @@
+--  WHEN OTHERS Exception
+
+DECLARE
+    l_num PLS_INTEGER;
+BEGIN
+    l_num := 45;
+    l_num := l_num / 0;
+EXCEPTION
+    WHEN zero_divide THEN
+        DBMS_OUTPUT.PUT_LINE('ZERO DIVISION ERROR');
+    WHEN NO_DATA_FOUND THEN 
+        DBMS_OUTPUT.PUT_LINE('NO_DATA_FOUND ERROR');
+END;
+

@@ -1,0 +1,14 @@
+--  User Defined Exception - Pragma EXCEPTION_INIT
+
+DECLARE
+    too_big EXCEPTION;
+    l_num PLS_INTEGER;
+    PRAGMA EXCEPTION_INIT(too_big, -1426);
+BEGIN
+    l_num := 3273278463278649;
+EXCEPTION
+    WHEN too_big THEN
+        DBMS_OUTPUT.PUT_LINE('TOO BIG NUMBER');
+        DBMS_OUTPUT.PUT_LINE('SQLCODE: ' || SQLCODE);
+        DBMS_OUTPUT.PUT_LINE('SQLERRM: ' || SQLERRM);
+END;

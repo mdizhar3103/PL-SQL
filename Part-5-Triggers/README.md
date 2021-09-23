@@ -31,4 +31,18 @@ System Triggers:
 
 Folder Sequence:
 1. DML-Triggers
+2. Compound-Triggers
+3. Trigger-Exceptions
+4. Trigger-Scope
+5. Trigger-Applications
 
+---------
+
+## Trigger Usage Guidelines
+Use oracle built-in features where possible
+- Use judiciously
+- Gurantee actions
+- Limit the size
+- Watch out for recursive triggers
+- Use compound triggers
+- Exception handling
